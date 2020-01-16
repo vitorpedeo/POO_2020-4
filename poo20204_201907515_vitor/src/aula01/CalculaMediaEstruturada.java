@@ -2,8 +2,12 @@ package aula01;
 
 import java.text.DecimalFormat;
 
-public class CalculaMedia {
-  public static void main(String[] args) { 
+/*
+  Exercício 01
+*/
+
+public class CalculaMediaEstruturada {
+   public static void main (String[] args) {
 	   String nomeAluno1 = "Vitor";
 	   double nota1Aluno1 = 10;
 	   double nota2Aluno1 = 8.5;
@@ -39,6 +43,6 @@ public class CalculaMedia {
 	   System.out.println("Aluno: " + nomeAluno4 + " - Média: " + df.format(mediaAluno4));
 	   
 	   System.out.println("Média Geral: " + df.format(mediaGeral));
-	   
-  }
+   }
+	
 }
