@@ -1,9 +1,9 @@
-package aula01.salaaula;
+package aula01.salaaula.ex02;
 
 import java.util.Scanner;
 
 /*
- Exercício 02
+ ExercÃ­cio 02 PE
 */
 
 public class ManipulandoNumerosEstruturada {
@@ -13,10 +13,10 @@ public static void main (String[] args) {
 	Scanner input = new Scanner(System.in);
 	   
 	   
-	   System.out.print("Digite o primeiro número: ");  	
+	   System.out.print("Digite o primeiro nÃºmero: ");  	
 	   int n1 = input.nextInt();
 	   
-	   System.out.print("Digite o segundo número: ");
+	   System.out.print("Digite o segundo nÃºmero: ");
 	   int n2 = input.nextInt();
 	   
 	   // Item (a)
@@ -24,7 +24,7 @@ public static void main (String[] args) {
 	   int elementos = Math.abs(n1 - n2) - 1;
 	   
 	     if (elementos < 1) {
-	    	 System.out.println("Não existem números inteiros entre " + n1 + " e " + n2);
+	    	 System.out.println("NÃ£o existem nÃºmeros inteiros entre " + n1 + " e " + n2);
 	     }else {
 	   
 	   System.out.println("Existe(m) " + elementos + " elemento(s) entre os valores informados");
@@ -56,7 +56,7 @@ public static void main (String[] args) {
 	   
 	   double media = soma/elementos;
 	   
-	   System.out.println("Média entre os valores: " + media);
+	   System.out.println("MÃ©dia entre os valores: " + media);
 	   
 	   //Item (d) e Item (e)
 	   
@@ -74,8 +74,8 @@ public static void main (String[] args) {
 	    	 aux++;
 	     }
 	   
-	     System.out.println("Existe(m) " + pares + " número(s) pares no intervalo");
-	     System.out.println("Existe(m) " + impares + " número(s) ímpares no intervalo");
+	     System.out.println("Existe(m) " + pares + " nÃºmero(s) pares no intervalo");
+	     System.out.println("Existe(m) " + impares + " nÃºmero(s) Ã­mpares no intervalo");
 	     
    }
  }	     

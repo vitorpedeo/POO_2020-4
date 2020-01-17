@@ -1,9 +1,9 @@
-package aula01.salaaula;
+package aula01.salaaula.ex01;
 
 import java.text.DecimalFormat;
 
 /*
-  Exercício 01
+  ExercÃ­cio 01 PE
 */
 
 public class CalculaMediaEstruturada {
@@ -37,12 +37,12 @@ public class CalculaMediaEstruturada {
 	   
 	   DecimalFormat df = new DecimalFormat("#,###.00");
 	   
-	   System.out.println("Aluno: " + nomeAluno1 + " - Média: " + df.format(mediaAluno1));
-	   System.out.println("Aluno: " + nomeAluno2 + " - Média: " + df.format(mediaAluno2));
-	   System.out.println("Aluno: " + nomeAluno3 + " - Média: " + df.format(mediaAluno3));
-	   System.out.println("Aluno: " + nomeAluno4 + " - Média: " + df.format(mediaAluno4));
+	   System.out.println("Aluno: " + nomeAluno1 + " - MÃ©dia: " + df.format(mediaAluno1));
+	   System.out.println("Aluno: " + nomeAluno2 + " - MÃ©dia: " + df.format(mediaAluno2));
+	   System.out.println("Aluno: " + nomeAluno3 + " - MÃ©dia: " + df.format(mediaAluno3));
+	   System.out.println("Aluno: " + nomeAluno4 + " - MÃ©dia: " + df.format(mediaAluno4));
 	   
-	   System.out.println("Média Geral: " + df.format(mediaGeral));
+	   System.out.println("MÃ©dia Geral: " + df.format(mediaGeral));
    }
 	
 }
