@@ -1,6 +1,9 @@
 package aula01.as1c;
 
 import java.util.Scanner;
+/*
+  Exercício 5
+*/
 
 public class ComparaSalario {
     public static void main(String[] args) {
