@@ -23,6 +23,7 @@ public class TestaContato {
         } else {
             System.out.println("Contato Inválido!");
         }
+        teclado.close();
     }
 
 }
