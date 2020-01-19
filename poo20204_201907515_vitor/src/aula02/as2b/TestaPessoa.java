@@ -25,7 +25,7 @@ public class TestaPessoa {
         pai.setIdade(teclado.nextInt());
         pai.mae = null; /*
                          * Professor, não consegui implementar os pais do pai da primeira pessoa
-                         * definida, por isso deixen null
+                         * definida, por isso deixei null
                          */
         pai.pai = null;
 
@@ -38,7 +38,7 @@ public class TestaPessoa {
         mae.setIdade(teclado.nextInt());
         mae.mae = null; /*
                          * Professor, não consegui implementar os pais da mãe da primeira pessoa
-                         * definida, por isso deixen null
+                         * definida, por isso deixei null
                          */
         mae.pai = null;
 
