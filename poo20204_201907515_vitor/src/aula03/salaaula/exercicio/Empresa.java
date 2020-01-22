@@ -7,8 +7,15 @@ public class Empresa {
     private String nomeResponsavel;
     private String telefoneResponsavel;
 
-    public void setNome(String n) {
-        this.nome = n;
+    public Empresa(String nome, String cnpj, String nomeResponsavel, String telefoneResponsavel) {
+        setNome(nome);
+        setCnpj(cnpj);
+        setNomeResponsavel(nomeResponsavel);
+        setTelefoneResponsavel(telefoneResponsavel);
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getNome() {
@@ -23,20 +30,26 @@ public class Empresa {
         return this.cnpj;
     }
 
-    public void setNomeResponsavel(String nr) {
-        this.nomeResponsavel = nr;
+    public void setNomeResponsavel(String nomeResponsavel) {
+        this.nomeResponsavel = nomeResponsavel;
     }
 
     public String getNomeResponsavel() {
         return this.nomeResponsavel;
     }
 
-    public void setTelefoneResponsavel(String tr) {
-        this.telefoneResponsavel = tr;
+    public void setTelefoneResponsavel(String telefoneResponsavel) {
+        this.telefoneResponsavel = telefoneResponsavel;
     }
 
     public String getTelefoneResponsavel() {
         return this.telefoneResponsavel;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Nome: %s - CNPJ: %s - Responsável: %s - Telefone: %s", nome, cnpj, nomeResponsavel,
+                telefoneResponsavel);
     }
 
 }

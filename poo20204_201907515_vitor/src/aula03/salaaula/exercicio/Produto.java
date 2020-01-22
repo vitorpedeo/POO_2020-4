@@ -8,44 +8,58 @@ public class Produto {
     private String cor;
     private String especificacao;
 
-    public void setNomeProduto(String np) {
-        this.nomeProduto = np;
+    public Produto(String nomeProduto, double tamanho, String tipo, String cor, String especificacao) {
+        setNomeProduto(nomeProduto);
+        setTamanho(tamanho);
+        setTipo(tipo);
+        setCor(cor);
+        setEspecificacao(especificacao);
     }
 
     public String getNomeProduto() {
-        return this.nomeProduto;
+        return nomeProduto;
     }
 
-    public void setTamanho(double t) {
-        this.tamanho = t;
+    public void setNomeProduto(String nomeProduto) {
+        this.nomeProduto = nomeProduto;
     }
 
     public double getTamanho() {
-        return this.tamanho;
+        return tamanho;
     }
 
-    public void setTipo(String ti) {
-        this.tipo = ti;
+    public void setTamanho(double tamanho) {
+        this.tamanho = tamanho;
     }
 
     public String getTipo() {
-        return this.tipo;
+        return tipo;
     }
 
-    public void setCor(String c) {
-        this.cor = c;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getCor() {
-        return this.cor;
+        return cor;
     }
 
-    public void setEspecificacao(String e) {
-        this.especificacao = e;
+    public void setCor(String cor) {
+        this.cor = cor;
     }
 
     public String getEspecificacao() {
-        return this.especificacao;
+        return especificacao;
+    }
+
+    public void setEspecificacao(String especificacao) {
+        this.especificacao = especificacao;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Nome: %s - Tamanho: %.2f - Tipo: %s - Cor: %s - Especificação: %s", nomeProduto, tamanho,
+                tipo, cor, especificacao);
     }
 
 }
