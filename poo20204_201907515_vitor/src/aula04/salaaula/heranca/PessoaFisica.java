@@ -39,7 +39,7 @@ public class PessoaFisica extends Pessoa {
 
     public String toString() {
         //Testar esse super, acho que tá errado (certo seria sb.append(super.toString()))
-        return super.toString() + String.format("CPF: %s\n Sexo: %s\nEstado Civil: %s\n", this.getCpf(), this.getSexo(),
+        return super.toString() + String.format("CPF: %s\nSexo: %s\nEstado Civil: %s\n", this.getCpf(), this.getSexo(),
                 this.getEstadoCivil());
     }
 }
