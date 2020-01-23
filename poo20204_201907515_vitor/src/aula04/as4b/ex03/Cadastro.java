@@ -24,6 +24,7 @@ public class Cadastro {
             System.out.println(funcGerente);
         }
 
+        System.out.println("Cliente(s):");
         Pessoa cliente1 = new Cliente("João da Silva", "96521-7485", 28, "12345678900");
         if (cliente1 instanceof Cliente) {
             Cliente c1 = (Cliente) cliente1;
@@ -41,5 +42,6 @@ public class Cadastro {
             Cliente c3 = (Cliente) cliente3;
             c3.mostraDados();
         }
+        System.out.println("");
     }
 }
