@@ -11,7 +11,7 @@ public class TestaAgenda {
         Scanner teclado = new Scanner(System.in);
         Agenda agenda = new Agenda();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println("\nInforme o nome " + (i + 1) + " :");
             String nome = teclado.nextLine();
 
@@ -27,22 +27,25 @@ public class TestaAgenda {
 
         String nomeAux;
 
-        System.out.println("\nDigite o nome do contato a ser removido (Digite não para ignorar):");
+        System.out.println("\nDigite o nome do Contato a ser removido (Digite não para ignorar):");
         nomeAux = teclado.nextLine();
         if (!nomeAux.equalsIgnoreCase("Nao")) {
             agenda.removePessoa(nomeAux);
-            System.out.println("Contato Removido!");
         }
 
-        System.out.println("\nDigite o nome do contato a ser buscado (Digite não para ignorar):");
+        System.out.println("\nDigite o nome do Contato a ser buscado (Digite não para ignorar):");
         nomeAux = teclado.nextLine();
         if (!nomeAux.equalsIgnoreCase("Nao")) {
-            System.out.println("O contato informado se encontra na posição " + agenda.buscaPessoa(nomeAux));
+            if (agenda.buscaPessoa(nomeAux) != -1) {
+                System.out.println("O Contato informado se encontra na posição " + agenda.buscaPessoa(nomeAux));
+            } else {
+                System.out.println("O Contato não foi encontrado!");
+            }
         }
 
         agenda.imprimeAgenda();
 
-        System.out.println("Digite a poisção do contato desejado: ");
+        System.out.println("Digite a posição do Contato desejado: ");
         agenda.imprimePessoa(teclado.nextInt());
 
         teclado.close();

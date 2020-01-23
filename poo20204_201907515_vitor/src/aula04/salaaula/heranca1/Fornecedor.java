@@ -1,10 +1,10 @@
-package aula04.salaaula.heranca;
+package aula04.salaaula.heranca1;
 
 import java.util.List;
 
 public class Fornecedor extends PessoaJuridica {
 
-    private List<String> produtos;
+    protected List<String> produtos;
 
     public Fornecedor(String nome, String endereco, String telefone, String cnpj, String razaoSocial,
             List<String> produtos) {

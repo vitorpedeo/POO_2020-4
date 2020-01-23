@@ -1,9 +1,10 @@
-package aula04.salaaula.heranca;
+package aula04.salaaula.heranca1;
 
 public class Funcionario extends PessoaFisica {
-    private int matricula;
-    private String cargo;
-    private double salario;
+    
+    protected int matricula;
+    protected String cargo;
+    protected double salario;
 
     public Funcionario(String nome, String endereco, String telefone, String cpf, String sexo, String estadoCivil,
             int matricula, String cargo, double salario) {

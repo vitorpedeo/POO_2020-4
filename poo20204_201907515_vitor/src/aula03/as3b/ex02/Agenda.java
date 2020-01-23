@@ -1,6 +1,7 @@
 package aula03.as3b.ex02;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -24,10 +25,23 @@ public class Agenda {
     }
 
     public void removePessoa(String nome) {
-        for (int i = 0; i < contatos.size(); i++) {
-            if (nome.equalsIgnoreCase(contatos.get(i).getNome())) {
-                contatos.remove(i);
+        Iterator<Pessoa> iterator = contatos.iterator();
+        int quantidadePessoas = contatos.size();
+
+        while (iterator.hasNext()) {
+            Pessoa pessoaRemover = iterator.next();
+
+            if (pessoaRemover.getNome().equals(nome)) {
+                iterator.remove();
             }
+        }
+
+        int novaQuantidadePessoas = contatos.size();
+
+        if (novaQuantidadePessoas < quantidadePessoas) {
+            System.out.println("O Contato de nome " + nome + " foi removido!");
+        } else {
+            System.out.println("O Contato não foi encontrado!");
         }
     }
 
@@ -50,10 +64,14 @@ public class Agenda {
     }
 
     public void imprimePessoa(int index) {
-        System.out.println("\nContato " + index + ":");
-        System.out.println("Nome: " + contatos.get(index).getNome());
-        System.out.println("Idade: " + contatos.get(index).getIdade() + " anos");
-        System.out.println("Altura: " + contatos.get(index).getAltura() + "cm\n");
+        if (index > this.getContatos().size()) {
+            System.out.println("O valor informado é maior que o tamanho da Agenda!");
+        } else {
+            System.out.println("\nContato " + index + ":");
+            System.out.println("Nome: " + contatos.get(index).getNome());
+            System.out.println("Idade: " + contatos.get(index).getIdade() + " anos");
+            System.out.println("Altura: " + contatos.get(index).getAltura() + "cm\n");
+        }
     }
 
 }

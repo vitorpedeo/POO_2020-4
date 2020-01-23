@@ -1,10 +1,10 @@
-package aula04.salaaula.heranca;
+package aula04.salaaula.heranca1;
 
 public class PessoaFisica extends Pessoa {
 
-    private String cpf;
-    private String sexo;
-    private String estadoCivil;
+    protected String cpf;
+    protected String sexo;
+    protected String estadoCivil;
 
     public PessoaFisica(String nome, String endereco, String telefone, String cpf, String sexo, String estadoCivil) {
         super(nome, endereco, telefone);
