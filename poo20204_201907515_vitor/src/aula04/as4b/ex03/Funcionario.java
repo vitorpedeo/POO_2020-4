@@ -1,5 +1,9 @@
 package aula04.as4b.ex03;
 
+/*
+  Exercício 3
+*/
+
 public class Funcionario extends Pessoa {
 
     protected int matricula;

@@ -1,5 +1,9 @@
 package aula04.as4b.ex01.contexto4;
 
+/*
+  Exercício 1
+*/
+
 public class Empresa {
 
     private String cnpj;

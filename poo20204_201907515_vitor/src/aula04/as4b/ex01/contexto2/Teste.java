@@ -1,5 +1,9 @@
 package aula04.as4b.ex01.contexto2;
 
+/*
+  Exercício 1
+*/
+
 public class Teste {
     public static void main(String[] args) {
         Departamento d1 = new Departamento("Instituto de Informática", "INF");

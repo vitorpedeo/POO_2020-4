@@ -1,5 +1,9 @@
 package aula04.as4b.ex02;
 
+/*
+  Exercício 2
+*/
+
 public class Funcionario {
 
     private String nome;

@@ -1,5 +1,9 @@
 package aula04.as4b.ex01.contexto3;
 
+/*
+  Exercício 1
+*/
+
 public class Cliente {
 
     private String nome;

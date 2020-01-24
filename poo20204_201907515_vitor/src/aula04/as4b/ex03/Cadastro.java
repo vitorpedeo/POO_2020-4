@@ -1,5 +1,9 @@
 package aula04.as4b.ex03;
 
+/*
+  Exercício 3
+*/
+
 public class Cadastro {
     public static void main(String[] args) {
         Pessoa caixa = new Caixa("Sophia da Costa", "96541-8874", 125, 2000, 8);
