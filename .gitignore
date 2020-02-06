@@ -1,3 +1,5 @@
+*.iml
+.idea/*
 saida.txt
 arquivo.txt
 /.metadata/
