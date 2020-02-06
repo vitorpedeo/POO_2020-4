@@ -1,0 +1,13 @@
+O código do exercício não implementa o Factory Method porque:
+ 1°- O método de criação na classe que representa a Factory não pode ser estático,
+     pois com esse modificador esse método só trabalharia com atributos e métodos
+     estáticos;
+ 2°- A classe XMLReaderFactory apenas fabrica uma mesma instância de determinada
+     classe. Ela não é responsável pelo processo de escolher qual classe será
+     instaciada.
+
+O código que fiz foi baseado no que aprendi em sala. Modifiquei o XMLReaderFactory
+com o objetivo dele decidir entre duas instâncias diferentes de XMLReader a serem
+criadas. Criei duas classes que implementam XMLReader, como se fossem alternativas
+para a resolução de um problema. A minha XMLReaderFactory, com base em uma String
+enviada pelo cliente, decide qual desses dois tipos será instaciado.
