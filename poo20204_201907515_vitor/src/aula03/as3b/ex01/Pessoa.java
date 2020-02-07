@@ -14,6 +14,8 @@ public class Pessoa {
     private Date dataNascimento;
     private double altura;
 
+    public Pessoa(){}
+
     public String getNome() {
         return nome;
     }
