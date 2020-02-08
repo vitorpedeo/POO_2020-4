@@ -4,6 +4,14 @@ package aula10.as8b.ex05;
   Exercício 5 (Item 7)
 */
 
+/*Comentário adicionado em 08/02/2020
+* Para que esse método funcione, basta comentar
+* a parte que se refere a comissão no método
+* calcularRendaTotal(), que foi modificado
+* a fim de testar a funcionalidade das
+* comissões.
+*/
+
 public class Teste {
     public static void main(String[] args) {
         Funcionario[] funcionarios = new Funcionario[10];
